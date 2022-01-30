@@ -11,6 +11,82 @@
 
 <body>
     
+    <main>
+
+        <h1>calcola il prezzo del tuo biglietto</h1>
+
+        <form>
+            <!-- prima riga -->
+            <div class="row">
+                <!-- nome -->
+                <div class="form-box">
+                    <label for="name">Nome Cognome</label>
+                    <input type="text" placeholder="Inserisci il tuo nome" id="name" required>
+                </div>
+                <!-- kilometri -->
+                <div class="form-box">
+                    <label for="kms">Km da percorrere</label>
+                    <input type="number" placeholder="Inserisci i km" id="kms" required>
+                </div>
+                <!-- età -->
+                <div class="form-box">
+                    <label for="age">Fascia d'et&agrave;</label>
+                    <select id="age" required>
+                        <option value="">Seleziona et&agrave;</option>
+                        <option value="underage">Minorenne</option>
+                        <option value="standard">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- seconda riga (bottoni) -->
+            <div class="row">
+                <!-- genera -->
+                <button id="submit">Genera</button>
+                <!-- resetta -->
+                <button id="erase">Annulla</button>
+            </div>
+        </form>
+        <!-- fine form -->
+
+
+        <h1>il tuo biglietto</h1>
+        <!-- biglietto generato -->
+        <div class="ticket">
+            <h3>dettaglio passeggeri</h3>
+            
+            <div class="ticket-content">
+                <!-- colonna nome -->
+                <div class="left col">
+                    <h3>nome passeggero</h3>
+                    <!-- <p class="bold">Jon Doe</p> -->
+                </div>
+
+                <!-- colonne info biglietto -->
+                <div class="right col">
+                    <div class="sub-col">
+                        <p class="bold">Offerta</p>
+                        <p>Biglietto Standard</p>
+                    </div>
+                    <div class="sub-col">
+                        <p class="bold">Carrozza</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sub-col">
+                        <p class="bold">Codice CP</p>
+                        <p>92911</p>
+                    </div>
+                    <div class="sub-col">
+                        <p class="bold">Costo Biglietto</p>
+                        <p>2.10&euro;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fine biglietto generato -->
+
+    </main>
 
     <script type="text/javascript" src="main.js"></script>
 </body>
